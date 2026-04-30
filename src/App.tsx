@@ -187,7 +187,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-orange-5 flex items-center gap-4">
+                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-orange-50 flex items-center gap-4">
                   <div className="w-12 h-12 bg-amber-400 rounded-2xl flex items-center justify-center text-[#0A192F] font-black text-xl">10</div>
                   <div>
                     <div className="text-[10px] font-black text-orange-600 uppercase tracking-widest">Grade Levels</div>
@@ -292,17 +292,16 @@ export default function App() {
             <motion.div
               variants={fadeInUp}
               initial="initial"
-              whileInView="white"
+              whileInView="whileInView"
             >
               <div className="relative group">
                 <div className="absolute -inset-4 bg-orange-500/20 rounded-[60px] blur-2xl group-hover:bg-orange-500/30 transition-all" />
                 <div className="relative aspect-[4/5] rounded-[48px] overflow-hidden border-4 border-white/10">
                   <img 
-                    src="https://i.ibb.co/TBBKXP4b/founder.jpg"
+                    src="/subtain_haider.jpg" 
                     alt="Subtain Haider - Founder & Principal"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
-                   
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-60" />
                 </div>
@@ -419,7 +418,7 @@ export default function App() {
                 Enroll Your Child Now <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </a>
               <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-orange-600">
-                <Zap size={14} className="fill-orange-600" /> Admissions for 2026 Now Open
+                <Zap size={14} className="fill-orange-600" /> Admissions for 2024 Now Open
               </div>
             </div>
           </motion.div>
@@ -438,18 +437,15 @@ export default function App() {
                >
                 <div className="aspect-square rounded-[80px] overflow-hidden shadow-4xl border-[16px] border-[#FDFBF7]">
                   <img 
-                    src="/founder.jpg" 
+                    src="/subtain_haider.jpg" 
                     alt="Subtain Haider - Principal portrait" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://raw.githubusercontent.com/bencuel82-rgb/School-360/main/founder.jpg';
-                    }}
                   />
                 </div>
                 {/* Years of Experience */}
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-orange-500 rounded-full flex flex-col items-center justify-center text-white p-4 rotate-12 shadow-xl">
-                  <div className="text-4xl font-black">14+</div>
+                  <div className="text-4xl font-black">20+</div>
                   <div className="text-[10px] font-black uppercase tracking-widest">Years of Magic</div>
                 </div>
                </motion.div>
@@ -467,15 +463,15 @@ export default function App() {
                 <div className="space-y-6 mb-12">
                    <div className="flex items-center gap-4">
                       <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">Delivering Excellence In Education Since 2011</span>
+                      <span className="font-bold text-slate-700">Pioneer of Stress-Free Pedagogy</span>
                    </div>
                    <div className="flex items-center gap-4">
                       <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">Builiding Confident Leaders For Tomorrow</span>
+                      <span className="font-bold text-slate-700">International Award Recipient in Education</span>
                    </div>
                 </div>
                 <div>
-                  <h4 className="text-2xl font-serif font-black text-[#0A192F]">Subtain</h4>
+                  <h4 className="text-2xl font-serif font-black text-[#0A192F]">Subtain Haider</h4>
                   <p className="text-orange-600 font-black uppercase tracking-widest text-xs">Founder & Principal</p>
                 </div>
               </motion.div>
