@@ -467,15 +467,15 @@ export default function App() {
                 <div className="space-y-6 mb-12">
                    <div className="flex items-center gap-4">
                       <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">Pioneer of Stress-Free Pedagogy</span>
+                      <span className="font-bold text-slate-700">Delivering Excellence In Education Since 2011</span>
                    </div>
                    <div className="flex items-center gap-4">
                       <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">International Award Recipient in Education</span>
+                      <span className="font-bold text-slate-700">Builiding Confident Leaders For Tomorrow</span>
                    </div>
                 </div>
                 <div>
-                  <h4 className="text-2xl font-serif font-black text-[#0A192F]">Subtain Haider</h4>
+                  <h4 className="text-2xl font-serif font-black text-[#0A192F]">Subtain</h4>
                   <p className="text-orange-600 font-black uppercase tracking-widest text-xs">Founder & Principal</p>
                 </div>
               </motion.div>
