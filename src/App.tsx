@@ -298,7 +298,7 @@ export default function App() {
                 <div className="absolute -inset-4 bg-orange-500/20 rounded-[60px] blur-2xl group-hover:bg-orange-500/30 transition-all" />
                 <div className="relative aspect-[4/5] rounded-[48px] overflow-hidden border-4 border-white/10">
                   <img 
-                    src="/founder.jpg" 
+                    src="https://raw.githubusercontent.com/bencuel82-rgb/School-360/main/public/founder.jpg" 
                     alt="Subtain Haider - Founder & Principal"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
