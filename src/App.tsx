@@ -10,7 +10,7 @@ import {
   Lightbulb, 
   ShieldCheck, 
   ArrowRight, 
-  Infinity, 
+  Infinity as InfinityIcon, 
   Eraser, 
   Box, 
   Zap,
@@ -27,6 +27,9 @@ import 'leaflet-geosearch/dist/geosearch.css';
 import L from 'leaflet';
 import { OpenStreetMapProvider, GeoSearchControl } from 'leaflet-geosearch';
 import React, { useEffect, useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Gallery from './components/Gallery';
+import Admin from './components/Admin';
 
 // Fix for default marker icons in Leaflet with React
 // @ts-ignore
@@ -70,7 +73,7 @@ function SearchField() {
   return null;
 }
 
-export default function App() {
+function LandingPage() {
   const mardanPosition: [number, number] = [34.1972, 72.0448]; // Updated based on user image
   
   const facilities = [
@@ -99,18 +102,19 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[#FDFBF7]/80 backdrop-blur-xl border-b border-orange-100/50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer">
+          <Link to="/" className="flex items-center gap-3 group cursor-pointer">
             <div className="w-10 h-10 bg-[#0A192F] rounded-lg flex items-center justify-center transition-transform group-hover:scale-110">
-              <Infinity className="text-amber-400 w-6 h-6" />
+              <InfinityIcon className="text-amber-400 w-6 h-6" />
             </div>
             <div className="flex flex-col -gap-1">
               <span className="font-serif font-black text-2xl tracking-tighter text-[#0A192F]">School 360°</span>
               <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-orange-600">The Revolution</span>
             </div>
-          </div>
+          </Link>
           <div className="hidden md:flex items-center gap-10 text-xs font-black uppercase tracking-widest text-[#0A192F]">
             <a href="#about" className="hover:text-orange-600 transition-colors">About</a>
             <a href="#curriculum" className="hover:text-orange-600 transition-colors">Grades</a>
+            <a href="#gallery" className="hover:text-orange-600 transition-colors">Gallery</a>
             <a href="#founder" className="hover:text-orange-600 transition-colors">Founder</a>
             <a href="#location" className="hover:text-orange-600 transition-colors font-bold flex items-center gap-1 text-orange-600">
               <MapPin size={12} /> Mardan Campus
@@ -283,6 +287,9 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <Gallery />
 
       {/* Founder Section */}
       <section id="founder" className="py-32 bg-[#0A192F] relative overflow-hidden">
@@ -549,7 +556,7 @@ export default function App() {
             <div className="col-span-1">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-                  <Infinity className="text-white w-5 h-5" />
+                  <InfinityIcon className="text-white w-5 h-5" />
                 </div>
                 <span className="font-serif italic font-black text-xl tracking-tighter">School 360°</span>
               </div>
@@ -581,10 +588,20 @@ export default function App() {
              <div className="flex gap-10 text-[10px] font-black uppercase tracking-widest text-blue-100/40">
                 <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
                 <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
+                <Link to="/admin" className="hover:text-orange-500 transition-colors">Admin Access</Link>
              </div>
           </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/admin" element={<Admin />} />
+    </Routes>
   );
 }

@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidId(id) { 
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); 
+    }
+
+    function isValidPhoto(data) {
+      return data.url is string && data.url.size() < 1024
+          && (data.caption == null || (data.caption is string && data.caption.size() < 500))
+          && data.createdAt != null;
+    }
+
+    match /photos/{photoId} {
+      allow read: if true;
+      allow create: if isValidId(photoId) && isValidPhoto(request.resource.data);
+      allow delete: if true; 
+      allow update: if false;
+    }
+  }
+}

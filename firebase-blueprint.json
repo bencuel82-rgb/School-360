@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "GalleryPhoto": {
+      "title": "Gallery Photo",
+      "description": "A photo in the school life gallery",
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Cloudinary URL of the image"
+        },
+        "caption": {
+          "type": "string",
+          "description": "Caption for the image"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Upload timestamp"
+        }
+      },
+      "required": ["url", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/photos": {
+      "schema": "GalleryPhoto",
+      "description": "Collection of gallery photos"
+    }
+  }
+}
