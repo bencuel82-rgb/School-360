@@ -302,9 +302,7 @@ export default function App() {
                     alt="Subtain Haider - Founder & Principal"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://raw.githubusercontent.com/bencuel82-rgb/School-360/main/founder.jpg';
-                    }}
+                   
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-60" />
                 </div>
