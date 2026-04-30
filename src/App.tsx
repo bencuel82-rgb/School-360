@@ -449,7 +449,7 @@ export default function App() {
                 </div>
                 {/* Years of Experience */}
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-orange-500 rounded-full flex flex-col items-center justify-center text-white p-4 rotate-12 shadow-xl">
-                  <div className="text-4xl font-black">20+</div>
+                  <div className="text-4xl font-black">14+</div>
                   <div className="text-[10px] font-black uppercase tracking-widest">Years of Magic</div>
                 </div>
                </motion.div>
