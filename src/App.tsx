@@ -419,7 +419,7 @@ export default function App() {
                 Enroll Your Child Now <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </a>
               <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-orange-600">
-                <Zap size={14} className="fill-orange-600" /> Admissions for 2024 Now Open
+                <Zap size={14} className="fill-orange-600" /> Admissions for 2026 Now Open
               </div>
             </div>
           </motion.div>
