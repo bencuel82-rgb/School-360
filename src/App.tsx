@@ -187,7 +187,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-orange-50 flex items-center gap-4">
+                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-orange-5 flex items-center gap-4">
                   <div className="w-12 h-12 bg-amber-400 rounded-2xl flex items-center justify-center text-[#0A192F] font-black text-xl">10</div>
                   <div>
                     <div className="text-[10px] font-black text-orange-600 uppercase tracking-widest">Grade Levels</div>
@@ -292,13 +292,13 @@ export default function App() {
             <motion.div
               variants={fadeInUp}
               initial="initial"
-              whileInView="whileInView"
+              whileInView="white"
             >
               <div className="relative group">
                 <div className="absolute -inset-4 bg-orange-500/20 rounded-[60px] blur-2xl group-hover:bg-orange-500/30 transition-all" />
                 <div className="relative aspect-[4/5] rounded-[48px] overflow-hidden border-4 border-white/10">
                   <img 
-                    src="/subtain_haider.jpg" 
+                    src="/founder.jpg" 
                     alt="Subtain Haider - Founder & Principal"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
@@ -437,7 +437,7 @@ export default function App() {
                >
                 <div className="aspect-square rounded-[80px] overflow-hidden shadow-4xl border-[16px] border-[#FDFBF7]">
                   <img 
-                    src="/subtain_haider.jpg" 
+                    src="/founder.jpg" 
                     alt="Subtain Haider - Principal portrait" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -587,4 +587,4 @@ export default function App() {
       </footer>
     </div>
   );
-}
+      }
