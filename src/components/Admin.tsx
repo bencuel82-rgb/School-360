@@ -24,7 +24,7 @@ export default function Admin() {
   const [loadingPhotos, setLoadingPhotos] = useState(true);
   const [photoToDelete, setPhotoToDelete] = useState<string | null>(null);
 
-  const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin360';
+  const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
   const CLOUDINARY_URL = `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/image/upload`;
   const UPLOAD_PRESET = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET;
 
