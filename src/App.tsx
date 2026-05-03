@@ -431,61 +431,50 @@ function LandingPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* Meet the Founder Section */}
-      <section id="founder" className="py-32 bg-white flex flex-col overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 w-full">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <div className="relative">
-               <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                className="relative z-10"
-               >
-                <div className="aspect-square rounded-[80px] overflow-hidden shadow-4xl border-[16px] border-[#FDFBF7]">
-                  <img 
-                    src="/subtain_haider.jpg" 
-                    alt="Subtain Haider - Principal portrait" 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-                {/* Years of Experience */}
-                <div className="absolute -top-10 -left-10 w-40 h-40 bg-orange-500 rounded-full flex flex-col items-center justify-center text-white p-4 rotate-12 shadow-xl">
-                  <div className="text-4xl font-black">14+</div>
-                  <div className="text-[10px] font-black uppercase tracking-widest">Years of Magic</div>
-                </div>
-               </motion.div>
-               <div className="absolute -bottom-20 -right-20 w-[140%] h-[140%] bg-orange-50 rounded-full -z-10"></div>
-            </div>
-            <div>
-              <motion.div variants={fadeInUp} initial="initial" whileInView="whileInView">
-                <Quote className="text-orange-200 w-16 h-16 mb-8" />
-                <h2 className="text-5xl md:text-7xl font-serif font-black tracking-tighter text-[#0A192F] mb-10 leading-[0.9]">
-                  Meet Our <br/> <span className="text-orange-500 italic">Visionary.</span>
-                </h2>
-                <p className="text-xl text-slate-600 font-medium leading-relaxed mb-8">
-                  "I started School 360° because I saw too many brilliant children losing their spark in rigid systems. My mission is simple: to protect that spark."
-                </p>
-                <div className="space-y-6 mb-12">
-                   <div className="flex items-center gap-4">
-                      <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">Pioneer of Stress-Free Pedagogy</span>
-                   </div>
-                   <div className="flex items-center gap-4">
-                      <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center"><ArrowRight size={12}/></div>
-                      <span className="font-bold text-slate-700">International Award Recipient in Education</span>
-                   </div>
-                </div>
-                <div>
-                  <h4 className="text-2xl font-serif font-black text-[#0A192F]">Subtain Haider</h4>
-                  <p className="text-orange-600 font-black uppercase tracking-widest text-xs">Founder & Principal</p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
+ 
+      {/* Why Choose Us Section */}
+<section className="py-32 bg-white overflow-hidden">
+  <div className="max-w-7xl mx-auto px-6 w-full">
+    <div className="text-center mb-16">
+      <p className="text-orange-500 font-medium tracking-widest text-[11px] uppercase mb-3">Why School 360°</p>
+      <h2 className="text-5xl md:text-7xl font-serif font-black tracking-tighter text-[#0A192F] leading-[0.9]">
+        Why Choose <br/> <span className="text-orange-500 italic">Us?</span>
+      </h2>
+    </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="p-8 rounded-3xl bg-[#0A192F] text-white">
+        <div className="text-4xl mb-4">🎓</div>
+        <h3 className="text-2xl font-bold mb-3">No Exams Stress</h3>
+        <p className="text-white/70">No Bag, No Homework, No Exam philosophy that focuses on real learning.</p>
+      </div>
+      <div className="p-8 rounded-3xl bg-orange-500 text-white">
+        <div className="text-4xl mb-4">🏆</div>
+        <h3 className="text-2xl font-bold mb-3">Award Winning</h3>
+        <p className="text-white/70">Internationally recognized school with 14+ years of excellence in education.</p>
+      </div>
+      <div className="p-8 rounded-3xl bg-[#0A192F] text-white">
+        <div className="text-4xl mb-4">❤️</div>
+        <h3 className="text-2xl font-bold mb-3">Character Building</h3>
+        <p className="text-white/70">We focus on building strong character and practical intelligence in every child.</p>
+      </div>
+      <div className="p-8 rounded-3xl bg-orange-500 text-white">
+        <div className="text-4xl mb-4">👨‍👩‍👧</div>
+        <h3 className="text-2xl font-bold mb-3">Family Community</h3>
+        <p className="text-white/70">A warm and welcoming community where every child and parent feels at home.</p>
+      </div>
+      <div className="p-8 rounded-3xl bg-[#0A192F] text-white">
+        <div className="text-4xl mb-4">🌍</div>
+        <h3 className="text-2xl font-bold mb-3">Modern Learning</h3>
+        <p className="text-white/70">World-class teaching methods combined with the values of our rich culture.</p>
+      </div>
+      <div className="p-8 rounded-3xl bg-orange-500 text-white">
+        <div className="text-4xl mb-4">⭐</div>
+        <h3 className="text-2xl font-bold mb-3">Proven Results</h3>
+        <p className="text-white/70">500+ successful students who are confident, creative and ready for the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Location Section */}
       <section id="location" className="py-32 bg-[#0A192F] text-white overflow-hidden relative">
