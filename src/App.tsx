@@ -306,7 +306,7 @@ function LandingPage() {
                 <div className="relative aspect-[4/5] rounded-[48px] overflow-hidden border-4 border-white/10">
                   <img 
                     src="/founder.jpg" 
-                    alt="Subtain Haider - Founder & Principal"
+                    alt="Subtain - Founder & Principal"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                   />
